@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Recyclerview ning har biri elementi uchun cardView dan foydalanamiz-->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/itemParent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Contacts Name"
+            android:textStyle="bold"
+            android:layout_marginTop="7dp"/>
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvName"
+            android:layout_marginTop="7dp"
+            android:text="Contacts Email"
+            android:textStyle="italic" />
+
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/tvEmail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_launcher_background" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
